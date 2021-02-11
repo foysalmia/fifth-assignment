@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hungry-Monster</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="container">
     <!-- Nav -->
     <header>
         <h2>HUNGRY-MONSTER</h2>
@@ -22,13 +24,32 @@
     <!-- Search Box -->
     <div class="search-it">
         <div class="search">
-            <input type="text" placeholder="Search for Meal...">
-            <button>SEARCH</button>
+            <input id="search-field" placeholder="Search for Meal...">
+            <button onclick="searchMeal()">SEARCH</button>
         </div>
     </div>
-    
+
+
+    <!--Food I -->
+    <div class="food-result">
+        <h3 class="title">Your Search Results:</h3>
+        <div id="meal-container" class="food">
+            <div class="food-Item">
+                <div class="food-img">
+                    <img src="images/blackberry-vanilla-french-toast.jpg" alt="Food">
+                </div>
+                <div class="food-name">
+                    <h4>Potato</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
     <script src="app.js"></script>
 </body>
+
 </html>

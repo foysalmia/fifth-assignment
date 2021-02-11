@@ -1,62 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.container {
+    padding: 0 10%;
+}
+
+
 /**Nav-Bar*/
-li, a{
+
+li,
+a {
     font-size: 16px;
     font-weight: 500;
     color: rgb(13, 3, 49);
-    
 }
-h2{
+
+h2 {
     font-size: 25px;
-    font-weight:1000;
+    font-weight: 1000;
     color: #F06C4E;
 }
-li, a, h2{
-    font-family: "Montserrat",sans-serif;
+
+li,
+a,
+h2 {
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 0;
     position: relative;
 }
-.nav_links{
+
+.nav_links {
     list-style: none;
 }
-.nav_links li{
+
+.nav_links li {
     display: inline-block;
     padding: 0 20px;
 }
 
+
 /* Search Box */
-/* search-it{
-    padding-top: 150px;
-    align-items: center;
-} */
-.search{
+
+.search {
     padding-top: 150px;
     align-items: center;
     width: 50%;
     margin: auto;
     justify-content: center;
 }
-.search input,button{
-    width: 75.01%;
+
+.search input,
+button {
+    width: 75%;
     border: none;
-    /* border: 2px solid rgb(116, 116, 116); */
-    /* border-right: 0; */
     font-size: 18px;
     padding: 20px 0px 20px 20px;
     background: #faf2f0;
 }
-.search button{
-    width: 21.29%;
+
+.search button {
+    width: 21%;
     color: white;
     background-color: #F06C4E;
     float: right;
-    /* border-left: 0px; */
     padding-left: 0;
     cursor: pointer;
+}
+
+
+/* Food Item after search */
+
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.food-Item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px #eeeeed;
+    margin: 32px 0;
+    background-color: #ececec;
+}
+
+.food-img img {
+    width: 100%;
+    display: block;
+}
+
+.food-name {
+    font-size: 22px;
+    text-align: center;
+}
+
+.food {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 282px);
+    gap: 32px;
+    /* margin-left: 10%; */
 }
